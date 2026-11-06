@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fixora AI</string>
+    <string name="tagline">Your Home. Our Priority.</string>
+    <string name="get_started">Get Started</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="login">Login</string>
+</resources>

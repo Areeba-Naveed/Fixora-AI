@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="240dp"
+    android:viewportWidth="300"
+    android:viewportHeight="240">
+
+    <!-- Soft background blob -->
+    <path
+        android:fillColor="#EEEAFB"
+        android:pathData="M30,130a120,95 0 1,0 240,0a120,95 0 1,0 -240,0z" />
+
+    <!-- Ground -->
+    <path android:fillColor="#DCD5F5" android:pathData="M10,212H290V218H10Z" />
+
+    <!-- ===== House ===== -->
+    <!-- Chimney -->
+    <path android:fillColor="#4B34AD" android:pathData="M232,52H248V84H232Z" />
+    <!-- Body -->
+    <path android:fillColor="#F3EEFB" android:pathData="M150,100H270V212H150Z" />
+    <path android:fillColor="#E3D9F5" android:pathData="M246,100H270V212H246Z" />
+    <!-- Roof -->
+    <path android:fillColor="#5B3FB8" android:pathData="M138,104L210,44L282,104Z" />
+    <path android:fillColor="#4B34AD" android:pathData="M210,44L282,104L250,104Z" />
+    <!-- Attic window -->
+    <path
+        android:fillColor="#FFD66B"
+        android:pathData="M199,80a11,11 0 1,0 22,0a11,11 0 1,0 -22,0z" />
+    <!-- Windows -->
+    <path android:fillColor="#8FB5FF" android:pathData="M166,118H192V146H166Z" />
+    <path android:fillColor="#FFD66B" android:pathData="M226,118H252V146H226Z" />
+    <path
+        android:strokeColor="#6A4CC9"
+        android:strokeWidth="1.5"
+        android:pathData="M179,118V146M166,132H192M239,118V146M226,132H252" />
+    <!-- Door -->
+    <path android:fillColor="#3F24B5" android:pathData="M198,158H228V212H198Z" />
+    <path
+        android:fillColor="#FFD66B"
+        android:pathData="M220,186a2.5,2.5 0 1,0 5,0a2.5,2.5 0 1,0 -5,0z" />
+    <!-- Bush -->
+    <path
+        android:fillColor="#6A4CC9"
+        android:pathData="M150,212a14,14 0 1,0 28,0a14,14 0 1,0 -28,0z
+                          M170,214a11,11 0 1,0 22,0a11,11 0 1,0 -22,0z" />
+
+    <!-- ===== Worker ===== -->
+    <!-- Legs -->
+    <path android:fillColor="#26307A" android:pathData="M62,150H78V205H62Z" />
+    <path android:fillColor="#26307A" android:pathData="M82,150H98V205H82Z" />
+    <!-- Boots -->
+    <path android:fillColor="#1B1B3A" android:pathData="M57,205H79V213H57Z" />
+    <path android:fillColor="#1B1B3A" android:pathData="M81,205H103V213H81Z" />
+    <!-- Arms -->
+    <path android:fillColor="#3F55C9" android:pathData="M47,86H58V142H47Z" />
+    <path android:fillColor="#3F55C9" android:pathData="M102,86H113V128H102Z" />
+    <!-- Torso -->
+    <path android:fillColor="#3F55C9" android:pathData="M58,82H102V152H58Z" />
+    <path android:fillColor="#FFD66B" android:pathData="M58,118H102V123H58Z" />
+    <!-- Neck + head -->
+    <path android:fillColor="#E8B48F" android:pathData="M75,72H85V84H75Z" />
+    <path
+        android:fillColor="#F2C9A5"
+        android:pathData="M64,62a16,16 0 1,0 32,0a16,16 0 1,0 -32,0z" />
+    <!-- Cap -->
+    <path android:fillColor="#2F44B5" android:pathData="M62,58A18,18 0 0,1 98,58Z" />
+    <path android:fillColor="#2F44B5" android:pathData="M60,56H100V60H60Z" />
+    <!-- Hands -->
+    <path
+        android:fillColor="#F2C9A5"
+        android:pathData="M47,146a6,6 0 1,0 12,0a6,6 0 1,0 -12,0z" />
+    <path
+        android:fillColor="#F2C9A5"
+        android:pathData="M102,128a6,6 0 1,0 12,0a6,6 0 1,0 -12,0z" />
+    <!-- Toolbox -->
+    <path android:fillColor="#E0533D" android:pathData="M36,152H72V178H36Z" />
+    <path android:fillColor="#B83E2B" android:pathData="M36,162H72V165H36Z" />
+    <path
+        android:strokeColor="#7A2A1D"
+        android:strokeWidth="3"
+        android:pathData="M46,152V146H62V152" />
+    <!-- Clipboard -->
+    <path android:fillColor="#FFFFFF" android:pathData="M108,98H134V132H108Z" />
+    <path android:fillColor="#5B3FB8" android:pathData="M114,95H128V101H114Z" />
+    <path
+        android:strokeColor="#B9B0E0"
+        android:strokeWidth="1.5"
+        android:pathData="M112,108H130M112,114H130M112,120H124" />
+</vector>

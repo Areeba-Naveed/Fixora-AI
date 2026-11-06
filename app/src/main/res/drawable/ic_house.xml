@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="390dp"
+    android:height="200dp"
+    android:viewportWidth="390"
+    android:viewportHeight="200">
+
+    <!-- Stars -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38.5,30a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0z
+                          M93.8,55a1.2,1.2 0 1,0 2.4,0a1.2,1.2 0 1,0 -2.4,0z
+                          M318.5,25a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0z
+                          M353.8,60a1.2,1.2 0 1,0 2.4,0a1.2,1.2 0 1,0 -2.4,0z
+                          M269,45a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z
+                          M129,20a1,1 0 1,0 2,0a1,1 0 1,0 -2,0z" />
+
+    <!-- Ground -->
+    <path android:fillColor="#241570" android:pathData="M0,176H390V200H0Z" />
+
+    <!-- Back trees -->
+    <path
+        android:fillColor="#3A2796"
+        android:pathData="M-4,120a34,34 0 1,0 68,0a34,34 0 1,0 -68,0z
+                          M32,140a30,30 0 1,0 60,0a30,30 0 1,0 -60,0z
+                          M328,120a34,34 0 1,0 68,0a34,34 0 1,0 -68,0z
+                          M300,140a30,30 0 1,0 60,0a30,30 0 1,0 -60,0z" />
+    <path
+        android:fillColor="#2F1F85"
+        android:pathData="M-18,150a28,28 0 1,0 56,0a28,28 0 1,0 -56,0z
+                          M64,158a22,22 0 1,0 44,0a22,22 0 1,0 -44,0z
+                          M352,150a28,28 0 1,0 56,0a28,28 0 1,0 -56,0z
+                          M284,158a22,22 0 1,0 44,0a22,22 0 1,0 -44,0z" />
+
+    <!-- Left wing -->
+    <path android:fillColor="#D6C3F0" android:pathData="M92,118H152V176H92Z" />
+    <path android:fillColor="#6A4CC9" android:pathData="M86,120L122,92L158,120Z" />
+    <path android:fillColor="#FFD66B" android:pathData="M106,132H122V152H106Z" />
+
+    <!-- Right wing -->
+    <path android:fillColor="#D6C3F0" android:pathData="M254,126H300V176H254Z" />
+    <path android:fillColor="#6A4CC9" android:pathData="M248,128L277,106L306,128Z" />
+    <path android:fillColor="#FFD66B" android:pathData="M268,138H284V156H268Z" />
+
+    <!-- Main house body -->
+    <path android:fillColor="#E6D8F7" android:pathData="M150,84H254V176H150Z" />
+    <path android:fillColor="#CDB7EC" android:pathData="M228,84H254V176H228Z" />
+
+    <!-- Chimney + roof -->
+    <path android:fillColor="#4B34AD" android:pathData="M222,36H236V66H222Z" />
+    <path android:fillColor="#5B3FB8" android:pathData="M140,88L202,36L264,88Z" />
+    <path android:fillColor="#4B34AD" android:pathData="M202,36L264,88L240,88Z" />
+
+    <!-- Attic window -->
+    <path
+        android:fillColor="#FFD66B"
+        android:pathData="M193,68a9,9 0 1,0 18,0a9,9 0 1,0 -18,0z" />
+
+    <!-- Windows -->
+    <path android:fillColor="#FFD66B" android:pathData="M164,98H188V124H164Z" />
+    <path android:fillColor="#8FB5FF" android:pathData="M214,98H238V124H214Z" />
+    <path android:fillColor="#8FB5FF" android:pathData="M164,134H188V160H164Z" />
+    <path
+        android:strokeColor="#6A4CC9"
+        android:strokeWidth="1.2"
+        android:pathData="M176,98V124M164,111H188M226,98V124M214,111H238M176,134V160M164,147H188" />
+
+    <!-- Door -->
+    <path android:fillColor="#4B34AD" android:pathData="M212,134H238V176H212Z" />
+    <path
+        android:fillColor="#FFD66B"
+        android:pathData="M230,156a2,2 0 1,0 4,0a2,2 0 1,0 -4,0z" />
+
+    <!-- Lamp post -->
+    <path android:fillColor="#1E1259" android:pathData="M318,132H321V176H318Z" />
+    <path
+        android:fillColor="#FFD66B"
+        android:pathData="M313.5,128a6,6 0 1,0 12,0a6,6 0 1,0 -12,0z" />
+
+    <!-- Front bushes -->
+    <path
+        android:fillColor="#4A32B0"
+        android:pathData="M138,176a12,12 0 1,0 24,0a12,12 0 1,0 -24,0z
+                          M160,180a10,10 0 1,0 20,0a10,10 0 1,0 -20,0z
+                          M246,178a12,12 0 1,0 24,0a12,12 0 1,0 -24,0z
+                          M62,180a14,14 0 1,0 28,0a14,14 0 1,0 -28,0z
+                          M326,180a14,14 0 1,0 28,0a14,14 0 1,0 -28,0z" />
+</vector>
