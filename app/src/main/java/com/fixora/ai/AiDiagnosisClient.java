@@ -24,7 +24,7 @@ public class AiDiagnosisClient {
 
     // Replace this IP with your laptop's IPv4 address
     private static final String API_URL =
-            "http://192.168.100.139:3000/diagnose";
+            "http://192.168.100.10:3000/diagnose";
 
     public interface DiagnosisCallback {
         void onSuccess(JSONObject result);
