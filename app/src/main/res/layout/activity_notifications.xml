@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FF">
+
+    <!-- Blue Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#243B80"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/btnNotificationBack"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+    <!-- Notifications List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Booking Confirmed -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_notification_card"
+                android:padding="14dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="#E0F5F1"
+                    android:text="✓"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#159B8A" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Booking Confirmed"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#202D4A" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your booking is confirmed."
+                        android:textSize="12sp"
+                        android:textColor="#667085"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2h ago"
+                    android:textSize="10sp"
+                    android:textColor="#929BB0" />
+
+            </LinearLayout>
+
+            <!-- Service Provider Arrived -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_notification_card"
+                android:padding="14dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="#FFF0DB"
+                    android:text="⌂"
+                    android:textSize="23sp"
+                    android:textColor="#E99A20" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Service Provider Arrived"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#202D4A" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your technician has arrived at your location."
+                        android:textSize="12sp"
+                        android:textColor="#667085"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3h ago"
+                    android:textSize="10sp"
+                    android:textColor="#929BB0" />
+
+            </LinearLayout>
+
+            <!-- New Message -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_notification_card"
+                android:padding="14dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="#E1F3F7"
+                    android:text="✉"
+                    android:textSize="21sp"
+                    android:textColor="#2699AD" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Message"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#202D4A" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="You have a new message from Rashid Ahmed."
+                        android:textSize="12sp"
+                        android:textColor="#667085"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4h ago"
+                    android:textSize="10sp"
+                    android:textColor="#929BB0" />
+
+            </LinearLayout>
+
+            <!-- Special Offer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_notification_card"
+                android:padding="14dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:background="#FCE8F0"
+                    android:text="%"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#D94B79" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Special Offer"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#202D4A" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get 10% off on AC repair this week!"
+                        android:textSize="12sp"
+                        android:textColor="#667085"
+                        android:layout_marginTop="5dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1d ago"
+                    android:textSize="10sp"
+                    android:textColor="#929BB0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

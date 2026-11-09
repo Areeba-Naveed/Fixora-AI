@@ -81,6 +81,26 @@
             android:name=".servicehome"
             android:exported="false" />
 
+        <activity
+            android:name=".profileactivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".notificationsactivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".PaymentMethodsActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".HelpSupportActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

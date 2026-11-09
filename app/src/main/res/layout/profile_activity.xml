@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FF">
+
+    <!-- Blue Header (Fixed at Top) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#243B80"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+    <!-- Scrollable Profile Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <!-- Profile Information -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingTop="25dp"
+                android:paddingBottom="25dp">
+
+                <FrameLayout
+                    android:id="@+id/profileAvatar"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:background="@drawable/bg_profile_avatar"
+                    android:clickable="true"
+                    android:focusable="true">
+
+                    <TextView
+                        android:id="@+id/tvProfileInitial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textSize="40sp"
+                        android:textStyle="bold"
+                        android:textColor="#4938CC"/>
+
+                    <ImageView
+                        android:id="@+id/ivProfilePhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_profile_avatar"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Customer Name"
+                    android:textColor="#222044"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvProfileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="customer@example.com"
+                    android:textColor="#85859B"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="✎ Edit Profile"
+                    android:textColor="#2678E8"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+            <!-- Single Profile Menu Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="10dp"
+                android:elevation="3dp">
+
+                <!-- My Bookings -->
+                <LinearLayout
+                    android:id="@+id/optionBookings"
+                    style="@style/ProfileMenuRow">
+
+                    <TextView
+                        style="@style/ProfileMenuIcon"
+                        android:text="▤"
+                        android:textColor="#4938CC"/>
+
+                    <TextView
+                        style="@style/ProfileMenuText"
+                        android:text="My Bookings"/>
+
+                    <TextView
+                        style="@style/ProfileMenuArrow"
+                        android:text="›"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/ProfileDivider"/>
+
+                <!-- Notifications -->
+                <LinearLayout
+                    android:id="@+id/optionNotifications"
+                    style="@style/ProfileMenuRow">
+
+                    <TextView
+                        style="@style/ProfileMenuIcon"
+                        android:text="♧"
+                        android:textColor="#2678E8"/>
+
+                    <TextView
+                        style="@style/ProfileMenuText"
+                        android:text="Notifications"/>
+
+                    <TextView
+                        style="@style/ProfileMenuArrow"
+                        android:text="›"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/ProfileDivider"/>
+
+                <!-- Payment Methods -->
+                <LinearLayout
+                    android:id="@+id/optionPayment"
+                    style="@style/ProfileMenuRow">
+
+                    <TextView
+                        style="@style/ProfileMenuIcon"
+                        android:text="▣"
+                        android:textColor="#4938CC"/>
+
+                    <TextView
+                        style="@style/ProfileMenuText"
+                        android:text="Payment Methods"/>
+
+                    <TextView
+                        style="@style/ProfileMenuArrow"
+                        android:text="›"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/ProfileDivider"/>
+
+                <!-- Help and Support -->
+                <LinearLayout
+                    android:id="@+id/optionSupport"
+                    style="@style/ProfileMenuRow">
+
+                    <TextView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:gravity="center"
+                        android:text="\u003F"
+                        android:textColor="#2678E8"
+                        android:textSize="16sp"
+                        android:background="#EFEBFF"/>
+
+                    <TextView
+                        style="@style/ProfileMenuText"
+                        android:text="Help &amp; Support"/>
+
+                    <TextView
+                        style="@style/ProfileMenuArrow"
+                        android:text="›"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/ProfileDivider"/>
+
+                <!-- Settings -->
+                <LinearLayout
+                    android:id="@+id/optionSettings"
+                    style="@style/ProfileMenuRow">
+
+                    <TextView
+                        style="@style/ProfileMenuIcon"
+                        android:text="⚙"
+                        android:textColor="#4938CC"/>
+
+                    <TextView
+                        style="@style/ProfileMenuText"
+                        android:text="Settings"/>
+
+                    <TextView
+                        style="@style/ProfileMenuArrow"
+                        android:text="›"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Bottom Space -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation (Fixed at Bottom) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="12dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+
+        <!-- Home -->
+        <LinearLayout
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⌂"
+                android:textSize="24sp"
+                android:textColor="#85859B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="11sp"
+                android:textColor="#77778E"/>
+        </LinearLayout>
+
+        <!-- Bookings -->
+        <LinearLayout
+            android:id="@+id/navBookings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▤"
+                android:textSize="23sp"
+                android:textColor="#85859B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookings"
+                android:textSize="11sp"
+                android:textColor="#77778E"/>
+        </LinearLayout>
+
+        <!-- Messages -->
+        <LinearLayout
+            android:id="@+id/navMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="▢"
+                android:textSize="23sp"
+                android:textColor="#85859B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Messages"
+                android:textSize="11sp"
+                android:textColor="#77778E"/>
+        </LinearLayout>
+
+        <!-- Profile -->
+        <LinearLayout
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♙"
+                android:textSize="23sp"
+                android:textColor="#4938CC"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="11sp"
+                android:textColor="#4938CC"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

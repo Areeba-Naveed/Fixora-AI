@@ -45,8 +45,11 @@ public class homeactivity extends AppCompatActivity {
             Intent intent = new Intent(homeactivity.this, customermessage.class);
             startActivity(intent);
         });
-        findViewById(R.id.navProfile).setOnClickListener(v ->
-                Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show());
+        findViewById(R.id.navProfile).setOnClickListener(v -> {
+            Intent intent = new Intent(homeactivity.this,
+                    profileactivity.class);
+            startActivity(intent);
+        });
     }
 
     private void setServiceClick(int id) {

@@ -64,6 +64,16 @@ public class loginscreen extends AppCompatActivity {
         if (email.equals(savedEmail)
                 && password.equals(savedPassword)) {
 
+            // Save currently logged-in user's email
+            SharedPreferences profilePrefs =
+                    getSharedPreferences("FixoraProfile", MODE_PRIVATE);
+
+            profilePrefs.edit()
+                    .putString("profileEmail", email)
+                    .putString("profileName",
+                            preferences.getString("name", "Customer Name"))
+                    .apply();
+
             Toast.makeText(
                     loginscreen.this,
                     "Login successful!",

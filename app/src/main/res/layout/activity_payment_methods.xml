@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FF">
+
+    <!-- Blue Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#243B80"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:id="@+id/btnPaymentBack"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="‹"
+            android:textSize="34sp"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Methods"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Intro -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Payment Options"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="#222044"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manage your preferred payment methods"
+                android:textSize="13sp"
+                android:textColor="#85859B"
+                android:layout_marginTop="5dp"/>
+
+            <!-- Saved Methods Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved Payment Methods"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#222044"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Saved Card -->
+            <LinearLayout
+                android:id="@+id/cardSavedMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:gravity="center"
+                        android:text="▣"
+                        android:textSize="24sp"
+                        android:textColor="#2678E8"
+                        android:background="#EFEBFF"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:id="@+id/tvSavedMethod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Debit / Credit Card"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="#222044"/>
+
+                        <TextView
+                            android:id="@+id/tvSavedDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="•••• 4582"
+                            android:textSize="13sp"
+                            android:textColor="#85859B"
+                            android:layout_marginTop="4dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvDefaultLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Default"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#2678E8"
+                        android:background="#EAF2FF"
+                        android:padding="7dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btnRemoveCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remove Card"
+                    android:textColor="#E05252"
+                    android:textSize="13sp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+            </LinearLayout>
+
+            <!-- Empty Saved Methods -->
+            <LinearLayout
+                android:id="@+id/emptySavedMethods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/bg_service_card"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▣"
+                    android:textSize="30sp"
+                    android:textColor="#2678E8"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No saved payment methods"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#222044"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add a payment option for your future bookings."
+                    android:textSize="12sp"
+                    android:textColor="#85859B"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+            <!-- Add Payment Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Payment Method"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#222044"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Debit / Credit Card -->
+            <LinearLayout
+                android:id="@+id/optionAddCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="15dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="▣"
+                    android:textSize="24sp"
+                    android:textColor="#2678E8"
+                    android:background="#EFEBFF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Debit / Credit Card"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#222044"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visa, Mastercard"
+                        android:textSize="12sp"
+                        android:textColor="#85859B"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textSize="26sp"
+                    android:textColor="#85859B"/>
+
+            </LinearLayout>
+
+            <!-- JazzCash -->
+            <LinearLayout
+                android:id="@+id/optionJazzCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="J"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#E05252"
+                    android:background="#FFF0F0"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="JazzCash"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#222044"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay using JazzCash"
+                        android:textSize="12sp"
+                        android:textColor="#85859B"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textSize="26sp"
+                    android:textColor="#85859B"/>
+
+            </LinearLayout>
+
+            <!-- Easypaisa -->
+            <LinearLayout
+                android:id="@+id/optionEasypaisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="e"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#299B58"
+                    android:background="#EAF8EF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Easypaisa"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#222044"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay using Easypaisa"
+                        android:textSize="12sp"
+                        android:textColor="#85859B"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textSize="26sp"
+                    android:textColor="#85859B"/>
+
+            </LinearLayout>
+
+            <!-- Cash on Service -->
+            <LinearLayout
+                android:id="@+id/optionCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:gravity="center"
+                    android:text="Rs"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#2678E8"
+                    android:background="#EFEBFF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash on Service"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#222044"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay after repair completion"
+                        android:textSize="12sp"
+                        android:textColor="#85859B"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textSize="26sp"
+                    android:textColor="#85859B"/>
+
+            </LinearLayout>
+
+            <!-- Payment History -->
+            <LinearLayout
+                android:id="@+id/optionPaymentHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_service_card"
+                android:padding="15dp"
+                android:layout_marginTop="22dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="◷"
+                    android:textSize="25sp"
+                    android:textColor="#4938CC"
+                    android:background="#EFEBFF"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Payment History"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#222044"
+                    android:layout_marginStart="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="›"
+                    android:textSize="26sp"
+                    android:textColor="#85859B"/>
+
+            </LinearLayout>
+
+            <!-- Security Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#EAF2FF"
+                android:padding="15dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="✓"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:textColor="#2678E8"
+                    android:background="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Secure Payments"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#243B80"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your payment details should always be protected. Never share your PIN or CVV."
+                        android:textSize="11sp"
+                        android:textColor="#64748B"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
